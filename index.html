@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="es.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="je.js"></script>
+    <title>Portafolio</title>
+    <style>
+        /* Agrega estilos personalizados para la sección de inicio (#home) */
+        #home {
+            background: url('t.jpg') center/cover no-repeat;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-position: center top; /* Ajusta la posición vertical aquí */
+        }
+
+        #home h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="container">
+                <h1><a href="#home">MI PORTAFOLIO</a></h1>
+                <ul>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h2>Desarrollador Web</h2>
+        </div>
+    </header>
+    
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <p>¡Hola! Soy @ChiAmaru, un apasionado desarrollador web con experiencia en la creación de soluciones innovadoras...</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>¡¡Hola! Soy @ChiAmaru, un apasionado desarrollador web con una sólida experiencia en la creación de soluciones innovadoras. A lo largo de mi carrera, he dedicado mi energía a desarrollar aplicaciones web que no solo cumplen con los estándares tecnológicos, sino que también destacan por su diseño intuitivo y funcionalidad excepcional. Mi enfoque principal se centra en fusionar la estética moderna con la usabilidad, buscando siempre superar las expectativas de los usuarios.
+
+                En mi trayectoria, he tenido el privilegio de trabajar en proyectos diversos que abarcan desde el diseño y desarrollo de sitios web elegantes hasta la implementación de aplicaciones web robustas. <br><br>Mi habilidad para traducir conceptos complejos en soluciones accesibles ha sido clave para la creación de experiencias digitales memorables. Además, estoy comprometido con la actualización continua de mis habilidades y la exploración de nuevas tecnologías para ofrecer soluciones vanguardistas.
+                
+                Mi objetivo es seguir contribuyendo al mundo digital mediante la creación de soluciones que no solo sean visualmente atractivas, sino que también ofrezcan un valor significativo a los usuarios. Siempre estoy dispuesto a asumir nuevos desafíos y aprender de cada proyecto para mejorar constantemente mi capacidad como desarrollador web. ¡Estoy emocionado por las oportunidades futuras y las posibilidades emocionantes que la tecnología nos ofrece!</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Proyectos</h2>
+
+            <div class="project">
+                <img src="3.png" alt="Proyecto 1">
+                <div class="project-info">
+                    <h3>Codigo de barras y RQ</h3>
+                    <p>
+                        Configuración de Redis:
+                        
+                        Se establece una conexión a un servidor Redis local utilizando la biblioteca redis.
+                        Creación de una Cola RQ:
+                        
+                        Se crea una instancia de la cola RQ () utilizando la conexión Redis configurada anteriormente.Queue
+                        Definición de una Tarea de Ejemplo:
+                        
+                        Se define una función () que toma dos parámetros, realiza una operación simple (suma en este caso), y devuelve un resultado.example_task
+                        Encolado de una Tarea:
+                        
+                        Se encola la tarea utilizando la función de la cola RQ. En este ejemplo, se encola una tarea para sumar 3 y 4.enqueue
+                        Obtención del ID del Trabajo:
+                        
+                        Se imprime el ID del trabajo encolado para referencia.
+                        Notas Adicionales:
+                        RQ (Redis Queue) es una biblioteca que permite la ejecución de tareas en segundo plano utilizando Redis como broker de mensajes.
+                        Este código de ejemplo muestra cómo encolar una tarea simple, pero en un entorno de producción, las tareas pueden ser más complejas y estar destinadas a procesamiento en segundo plano, como la generación de informes, envío de correos electrónicos, etc</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="5.jpg" alt="Proyecto 2">
+                <div class="project-info">
+                    <h3>DETECION DE IP</h3>
+                    <p>Uso de la Biblioteca solicita:
+
+                        El script utiliza la biblioteca requests para realizar una solicitud HTTP a un servicio en línea que devuelve información sobre la dirección IP pública del dispositivo.
+                        Función get_public_ip:
+                        
+                        La diversión
+                        Verifica si la solicitud fue exitosa (código de estado 200).
+                        Extrae la dirección IP de la respuesta JSON del servicio 'httpbin'.
+                        Manejo de Errores:
+                        
+                        El script maneja posibles errores, como problemas de conexión o respuestas no exitosas.
+                        Impresión de la IP Pública:
+                        
+                        La IP pública se imprime en la consola.
+                        Notas Adicionales:
+                        El servicio 'httpbin' utilizado aquí es un servicio gratuito que proporciona endpoints útiles para pruebas y desarrollo, incluyendo la obtención de la IP pública.
+                        Si necesitas más información o tienes alguna pregunta específica sobre este código, estaré encantado de ayudarte.
+                        
+                        
+                        
+                        
+                        </p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="6.jpg" alt="Proyecto 3">
+                <div class="project-info">
+                    <h3>UBICACION DEL USUARIO</h3>
+                    <p>esta wed usa la ayuda de google maps para encontrar la uvicacion de el usuario  si quieres mas inf del code contactame .</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¡Ponte en contacto conmigo para colaboraciones y oportunidades!</p>
+            <a href="@ChiAmaru">MI TELEGRAM</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
